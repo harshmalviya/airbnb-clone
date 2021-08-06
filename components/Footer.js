@@ -33,7 +33,6 @@ function Footer() {
         <p>Harsh Malviya</p>
         <p>Github</p>
       </div>
-      
     </div>
   );
 }
