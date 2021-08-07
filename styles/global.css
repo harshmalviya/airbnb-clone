@@ -4,4 +4,10 @@
   .button {
     @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-90 select-none active:bg-gray-100 transition transform duration-100 ease-out;
   }
+  .header {
+    @apply fixed w-full top-0 z-50 grid grid-cols-3 bg-transparent p-4 md:px-10;
+  }
+  .headera {
+    @apply fixed w-full top-0 z-50 grid grid-cols-3 bg-white shadow-md p-4 md:px-10;
+  }
 }

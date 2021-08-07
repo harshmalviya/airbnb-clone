@@ -8,11 +8,12 @@ import Map from "../components/Map";
 function Search({ searchResults }) {
   const router = useRouter();
   const { location, startDate, endDate, noOfGuests } = router.query;
+  const pathname = router.pathname;
   const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
   const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
   const range = `${formattedStartDate} - ${formattedEndDate}`;
 
-  console.log(searchResults);
+  console.log(pathname);
   return (
     <div>
       <Head>
@@ -21,7 +22,7 @@ function Search({ searchResults }) {
       </Head>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
       <main className="flex">
-        <section className="flex-grow px-6 pt-14">
+        <section className="flex-grow pl-6 pt-32">
           <p className="text-xs">
             300+ Stays - {range} - for {noOfGuests} guests
           </p>
@@ -53,7 +54,7 @@ function Search({ searchResults }) {
           </div>
         </section>
         <section className="hidden xl:inline-flex xl:min-w-[600px]">
-          <Map searchResults={searchResults}/>
+          <Map searchResults={searchResults} />
         </section>
       </main>
       <Footer />
