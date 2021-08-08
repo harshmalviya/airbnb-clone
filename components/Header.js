@@ -7,7 +7,7 @@ import {
   UsersIcon
 } from "@heroicons/react/solid";
 import { useEffect, useState } from "react";
-import { DateRangePicker } from "react-date-range";
+import { DateRange, DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { useRouter } from "next/dist/client/router";
@@ -116,7 +116,7 @@ function Header({ placeholder }) {
 
       {searchInput && (
         <div className="flex flex-col col-span-3 mx-auto bg-white rounded-xl mt-2">
-          <DateRangePicker
+          <DateRange
             ranges={[selectionRange]}
             minDate={new Date()}
             rangeColors={["#FD5B61"]}
