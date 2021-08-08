@@ -7,7 +7,7 @@ function Banner() {
         layout="fill"
         objectFit="cover"
       />
-      <div className="absolute top-20 left-9 md:top-28 md:left-24 xl:top-52 xl:left-24 w-full">
+      <div className="absolute top-20 left-9 md:top-28 md:left-24 xl:top-52 xl:left-24">
         <div className="flex w-32 text-3xl md:text-4xl xl:text-6xl font-bold text-white">
           Olympian & Paralympian Online Experiences
         </div>
