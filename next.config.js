@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ["links.papareact.com", "i.imgur.com"]
+    domains: ["links.papareact.com", "i.imgur.com", "jsonkeeper.com"]
   },
   env: {
     mapbox_key:

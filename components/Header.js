@@ -115,7 +115,7 @@ function Header({ placeholder }) {
       </div>
 
       {searchInput && (
-        <div className="flex flex-col col-span-3 mx-auto bg-white rounded-xl mt-1">
+        <div className="flex flex-col col-span-3 mx-auto bg-white rounded-xl mt-2">
           <DateRangePicker
             ranges={[selectionRange]}
             minDate={new Date()}
@@ -135,7 +135,7 @@ function Header({ placeholder }) {
               min={1}
             />
           </div>
-          <div className="flex mb-4">
+          <div className="flex mb-2">
             <button
               onClick={() => setSearchInput("")}
               className="flex-grow text-gray-500 "
